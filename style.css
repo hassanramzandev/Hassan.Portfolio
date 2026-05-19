@@ -33,6 +33,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
+  border-bottom: 1px solid #222;;
   background-color: #092330;
   position: sticky;/*position fixed not move*/
   top: 0;
