@@ -5,7 +5,7 @@
             if(navmenu.classList.remove('show'));
            }
     });
-     emailjs.init("az3zbf5-CK_K1w7Va");
+     emailjs.init("lyEhKHgTvN8fAmLMY");
 
      const form=document.getElementById('contact');
 
@@ -14,7 +14,7 @@
     e.preventDefault();
     emailjs.sendForm(
         "service_jzv5fz6",
-        "template_fgros4m",
+        "template_kys5bqe",
           form
     )
     .then(function(){
@@ -25,7 +25,7 @@
 
     .catch(function(error)
 {
-    alert('Message failed');
+    alert('error details' + JSON.stringify(error));
 
     console.log(error);
      });

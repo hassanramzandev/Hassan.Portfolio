@@ -5,11 +5,16 @@
   box-sizing: border-box;
   ;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0,0,0);
   color: #fff;
   line-height: 1.6;
+  scroll-behavior: smooth;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -28,7 +33,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background-color: #000;
+  background-color: #092330;
   position: sticky;/*position fixed not move*/
   top: 0;
   z-index: 100;/*it is show the which box show up or below*/
@@ -46,6 +51,7 @@ a {
   list-style: none;
   gap: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 .nav-links li a {
   color: #fff;
@@ -109,20 +115,24 @@ a {
 .btn-primary {
   background-color: #4dc4ff;
   color: #000;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #1ea7e6;
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   border: 1px solid #fff;
   color: #fff;
+  transition: 0.3s;
 }
 
 .btn-outline:hover {
   background-color: #fff;
   color: #000;
+  transform: translateY(-2px);
 }
 
 .hero-img img {
